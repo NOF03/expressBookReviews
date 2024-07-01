@@ -102,7 +102,6 @@ public_users.get('/isbn/:isbn', function (req, res) {
 
 function getBookDetails(isbn) {
   return new Promise((resolve, reject) => {
-    // Assuming 'books' is an object where ISBN is the key and book details is the value
     const booked = books[isbn];
     if (booked) {
       resolve(booked);
